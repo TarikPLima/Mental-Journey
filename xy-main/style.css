@@ -70,12 +70,14 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   top: 0;
   width: 100%;
   z-index: 10;
+  border: 2px solid rgb(141, 141, 141, 0.5);
 }
 
 .logo {
   display: flex;
   align-items: center;
   margin-left: 70px;
+  margin-bottom: 5px;
 }
 
 .logo img {
@@ -100,7 +102,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   display: inline;
   position: relative;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .nav-links a {
@@ -190,16 +192,6 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   }
 }
 
-.introducao {
-    height: 100%;
-    width: -moz-fit-content;
-    width: fit-content;
-    display: flex;
-    align-items: start;
-    position: relative;
-    pointer-events: none;
-}
-
 .titulo-intro {
   margin-top: 170px;
   margin-left: 170px;
@@ -223,7 +215,6 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 .btn-chatEmergencial {
   margin-left: 250px;
   margin-top: 210px;
-  margin-bottom: 600px;
   display: inline-block;
 }
 
@@ -242,6 +233,61 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   margin-right: 10px;
   margin-bottom: 10px;
   vertical-align: middle;
+}
+
+.agendamento-consultas {
+  background-color: #5180CC;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 290px;
+}
+
+.img-agendamento {
+  width: 700px;
+  margin-left: 210px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  transform: rotate(6deg);
+}
+
+.agendamento-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 300px;
+}
+
+.titulo-agendamento {
+  color: white;
+  margin-bottom: 100px;
+  margin-top: 70px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.paragrafo-agendamento {
+  line-height: 1.1;
+  font-size: 25px;
+  color: white;
+  margin-right: 100px;
+}
+
+.btn-agendamento {
+  margin-top: 200px;
+  margin-right: 180px;
+}
+
+.btn-agendamento a {
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 35px;
+  padding: 35px 80px;
+  margin-bottom: 600px;
+  background-color: #ffffff;
+  color: #5180CC;
+  font-weight: 500;
 }
 
 .img-outer {
@@ -613,6 +659,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     grid-row-gap: 80px;
     grid-template-columns: 1fr 372px;
     grid-template-rows: auto;
+    margin-top: 700px;
    }
    
    .content.idea__content.video__content {
