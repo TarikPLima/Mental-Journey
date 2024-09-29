@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Mental Journey</title>
@@ -19,59 +20,56 @@
 </head>
 
 <body>
-    <section class="section hero wf-section">
-            <header>
-                <nav class="navbar">
-                    <div class="logo">
-                        <img src="imagens/Logo.png" alt="Logo">
-                        <span>Mental Journey</span>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Chat Emergencial</a></li>
-                        <li><a href="#">Agendamento de Consultas</a></li>
-                        <!-- Dropdown Menu para 'Recursos de Autoajuda' -->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" id="toggleDropdown">Recursos de Autoajuda
-                                <span class="arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="seta" viewBox="0 0 16 10">
-                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <ul class="dropdown-content" id="dropdownMenu">
-                                <li><a href="#">Vídeos</a></li>
-                                <li><a href="#">Artigos</a></li>
-                                <li><a href="#">Podcasts</a></li>
-                                <li><a href="#">Outros</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Sobre Nós</a></li>
-                    </ul>
-                    <div class="login">
-                        <a href="#">Login</a>
-                    </div>
-                </nav>
-            </header>
-    </section>
-    <section id="strip">
-        <h1 class="slider_title">nossos serviços<span class="orange">.</span></h1>
-        <div class="strip-outer">
-            <div class="strip-inner">
-                <div class="draggable">
-                    <div class="strip">
-                        <div class="strip__item">
-                        </div>
-                        <div class="strip__item">
-                        </div>
-                        <div class="strip__item">
-                        </div>
-                        <div class="strip__item">
-                        </div>
-                    </div>
-                </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagens/Logo.png" alt="Logo">
+                <span>Mental Journey</span>
             </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chat Emergencial</a></li>
+                <li><a href="#">Agendamento de Consultas</a></li>
+                <!-- Dropdown Menu para 'Recursos de Autoajuda' -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="toggleDropdown">Recursos de Autoajuda
+                        <span class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="seta" viewBox="0 0 16 10">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdown-content" id="dropdownMenu">
+                        <li><a href="#">Vídeos</a></li>
+                        <li><a href="#">Artigos</a></li>
+                        <li><a href="#">Podcasts</a></li>
+                        <li><a href="#">Outros</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+            <div class="login">
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="introducao">
+        <img src="imagens/Acolhimento.png" class="img-intro">
+        <h1 class="titulo-intro">Sua jornada para o <br> Bem-estar Mental!</h1>
+        <p class="paragrafo-intro">
+            Desperte uma nova versão de si mesmo,<br> onde sua saúde mental está no centro<br> de cada conquista.
+        </p>
+        <div class="btn-chatEmergencial">
+            <a href="#">
+                <img src="imagens/icon-chat.png" class="btn-icon-chat">
+                Chat Emergencial
+            </a>
+        </div>
     </section>
+
     <div id="idea" class="section idea__section wf-section">
         <div class="content idea__content idea__content1">
             <div class="opacity d-block">
@@ -292,7 +290,7 @@
     <script>
         imagesLoaded(document.querySelectorAll('.img-inner'), { background: true }, () => document.body.classList.remove('loading'));
     </script>
-    
+
 </body>
 
 </html>

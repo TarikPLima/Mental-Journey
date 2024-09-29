@@ -2,7 +2,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    body {
      background-color: #D0D7E2;
      font-family: "Quicksand", sans-serif;
-     color: rgb(0, 0, 0);
+     color: #174f9f;
      font-size: 14px;
      line-height: 137%;
    }
@@ -153,7 +153,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 }
 
 .dropdown-content.show {
-  display: block; /* Mostra o dropdown quando a classe 'show' for adicionada */
+  display: block;
 }
 
 .login {
@@ -190,46 +190,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   }
 }
 
-
-
-
-   
-   #strip {
-    overflow: hidden;
-    position: relative;
-}
-
-.strip-outer {
-    width: 100%;
-    min-height: 750px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.draggable {
-    height: 500px;
-    top: calc(50% - 250px);
-    width: 100%;
-    position: absolute;
-    cursor: grab;
-    overflow: hidden;
-    transition: transform 0.2s ease;
-}
-
-.draggable:active {
-    cursor: grabbing;
-}
-
-.slider_title {
-    margin-top: 160px;
-    margin-left: 20px;
-}
-
-.strip {
+.introducao {
     height: 100%;
     width: -moz-fit-content;
     width: fit-content;
@@ -239,13 +200,48 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     pointer-events: none;
 }
 
-.strip__item {
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    flex-shrink: 0;
+.titulo-intro {
+  margin-top: 170px;
+  margin-left: 170px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.paragrafo-intro {
+  margin-left: 170px;
+  font-size: 28px;
+  line-height: 1.0;
+  color: rgb(23, 79, 159, 0.7);
+}
+
+.img-intro {
+  width: 650px;
+  float: right;
+  margin-right: 190px;
+}
+
+.btn-chatEmergencial {
+  margin-left: 250px;
+  margin-top: 210px;
+  margin-bottom: 600px;
+  display: inline-block;
+}
+
+.btn-chatEmergencial a {
+  text-decoration: none;
+  font-size: 40px;
+  border-radius: 20px;
+  padding: 35px 70px;
+  margin-bottom: 600px;
+  background-color: #5180CC;
+  color: #fff;
+}
+
+.btn-icon-chat {
+  width: 60px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
 }
 
 .img-outer {
@@ -282,15 +278,6 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     transition: transform 0.3s ease-in-out;
 }
 
-.strip__item-number {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem;
-    user-select: none;
-}
-
   
    h2 {
      margin-top: 0px;
@@ -298,7 +285,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
      font-size: 62px;
      line-height: 100%;
      font-weight: 300;
-   }
+}
    
    p {
      margin-bottom: 10px;
