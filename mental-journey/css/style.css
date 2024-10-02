@@ -382,6 +382,7 @@ h1 {
   }
 }
 
+/* Rodapé */
 .footer {
   background: rgba(23, 79, 159, 0.7); /* Background com glassmorphism */
   border-top-left-radius: 20px;
