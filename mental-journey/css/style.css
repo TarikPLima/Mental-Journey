@@ -1,40 +1,36 @@
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type='checkbox'],input[type='radio']{box-sizing:border-box;padding:0}input[type='number']::-webkit-inner-spin-button,input[type='number']::-webkit-outer-spin-button{height:auto}input[type='search']{-webkit-appearance:none}input[type='search']::-webkit-search-cancel-button,input[type='search']::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/* Estilos base */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-  background-color: #D0D7E2;
+  margin: 0;
   font-family: "Quicksand", sans-serif;
   color: #174f9f;
   font-size: 14px;
   line-height: 137%;
-}
-   
-h1 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 80px;
-  line-height: 100%;
-  font-weight: 500;
+  background-color: #d0d7e2;
 }
 
-
+/* Seleção de texto */
 ::selection {
   color: #ffffff;
-  background: #5180CC;
+  background: #5180cc;
 }
 
-.agendamento-consultas ::selection {
-  background: #174F9F;
-}
-
+/* Barras de rolagem personalizadas */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #BBBABA;
+  background: #bbbaba;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5180CC;
+  background: #5180cc;
   border-radius: 20px;
 }
 
@@ -42,48 +38,23 @@ h1 {
   background: #15417e;
 }
 
-.partner {
-  font-size: 30px;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-
-.header {
-    display: flex;
-    align-items: center;
-}
-
-.img-logo-header {
-    width: 43px;
-    margin-top: 5px;
-}
-
-.nome-logo {
-    color: #174F9F;
-    margin-left: 7px;
-}
-
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 159.6%;
   background-color: white;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
-  border: 1px solid rgb(141, 141, 141, 0.5);
+  border: 1px solid rgba(141, 141, 141, 0.5);
+  padding: 10px 20px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  margin-left: 70px;
-  margin-bottom: 5px;
 }
 
 .logo img {
@@ -103,6 +74,7 @@ h1 {
   display: flex;
   gap: 20px;
   font-weight: 550;
+  margin-right: 30px;
 }
 
 .nav-links li {
@@ -123,7 +95,7 @@ h1 {
 
 .nav-links a.active,
 .nav-links a:hover {
-  background-color: #5180CC;
+  background-color: #5180cc;
   color: #fff;
 }
 
@@ -131,7 +103,7 @@ h1 {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0%;
+  left: 0;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -156,7 +128,7 @@ h1 {
 }
 
 .dropdown-content a:hover {
-  background-color: #5180CC;
+  background-color: #5180cc;
   color: #fff;
 }
 
@@ -165,7 +137,6 @@ h1 {
 }
 
 .login {
-  margin-right: 80px;
   font-weight: 500;
 }
 
@@ -179,167 +150,119 @@ h1 {
 }
 
 .login a:hover {
-  background-color: #5180CC;
+  background-color: #5180cc;
   color: #fff;
 }
 
+/* Introdução */
+.introducao {
+  text-align: center;
+  padding: 100px 20px;
+}
+
 .titulo-intro {
-  margin-top: 170px;
-  margin-left: 170px;
   font-weight: bold;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .paragrafo-intro {
-  margin-left: 170px;
-  font-size: 28px;
-  line-height: 1.0;
-  color: rgb(23, 79, 159, 0.7);
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(23, 79, 159, 0.7);
+  margin-bottom: 30px;
 }
 
 .img-intro {
-  width: 650px;
-  float: right;
-  margin-right: 190px;
+  width: 100%;
+  max-width: 650px;
+  display: block;
+  margin: 0 auto;
 }
 
 .btn-chatEmergencial {
-  margin-left: 250px;
-  margin-top: 210px;
-  display: inline-block;
+  margin-top: 30px;
 }
 
 .btn-chatEmergencial a {
   text-decoration: none;
-  font-size: 40px;
+  font-size: 18px;
   border-radius: 20px;
-  padding: 35px 70px;
-  margin-bottom: 600px;
-  background-color: #5180CC;
+  padding: 15px 30px;
+  background-color: #5180cc;
   color: #fff;
 }
 
 .btn-icon-chat {
-  width: 60px;
+  width: 30px;
   margin-right: 10px;
-  margin-bottom: 10px;
   vertical-align: middle;
 }
 
+/* Agendamento de Consultas */
 .agendamento-consultas {
-  background-color: #5180CC;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  margin-top: 290px;
+  background-color: #5180cc;
+  padding: 50px 20px;
 }
 
 .img-agendamento {
-  width: 700px;
-  margin-left: 180px;
-  margin-top: 70px;
-  margin-bottom: 50px;
-  transform: rotate(6deg);
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
 }
 
 .agendamento-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: 250px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .titulo-agendamento {
-  color: white;
-  margin-bottom: 100px;
-  margin-top: 80px;
+  color: #fff;
   font-weight: bold;
-  margin-right: 75px;
-  font-size: 50px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .paragrafo-agendamento {
-  line-height: 1.1;
-  font-size: 26px;
-  color: white;
-  margin-right: 100px;
-}
-
-.btn-agendamento {
-  margin-top: 180px;
-  margin-right: 180px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
 
 .btn-agendamento a {
   text-decoration: none;
-  font-size: 30px;
-  border-radius: 35px;
-  padding: 28px 70px;
-  margin-bottom: 600px;
-  background-color: #ffffff;
-  color: #5180CC;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #5180cc;
   font-weight: 500;
 }
 
-.titulo-sobre {
-  font-size: 38px;
-  margin-left: 430px;
-}
-
-.paragrafo-sobre {
-  font-size: 20px;
-  margin: 50px 430px 0px 430px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-.btn-sobre {
-  margin-top: 80px;
-  margin-left: 430px;
-  margin-bottom: 120px;
-}
-
-.btn-sobre a {
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 50px;
-  padding: 15px 35px;
-  color: #174F9F;
-  font-weight: 600;
-  border: 3px solid #174F9F;
-}
-
-.btn-sobre a:hover {
-  background-color: #174F9F;
-  color: white;
-}
-
+/* Recursos de Autoajuda */
 .recursos-autoajuda {
-  padding: 90px 20px;
-}
-
-.autoajuda-container {
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 50px 20px;
 }
 
 .titulo-autoajuda {
   font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 50px;
   text-align: center;
-  color: #174F9F;
+  color: #174f9f;
+  margin-bottom: 30px;
 }
 
 .autoajuda-content {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .autoajuda-item {
-  padding: 15px;
+  flex: 1 1 300px;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -350,7 +273,7 @@ h1 {
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #174F9F;
+  color: #174f9f;
 }
 
 .autoajuda-descricao {
@@ -363,64 +286,56 @@ h1 {
   text-decoration: none;
 }
 
-/* Responsividade do Recursos de Autoajuda */
-@media (max-width: 768px) {
-  .titulo-autoajuda {
-      font-size: 1.8rem;
-  }
+/* Sobre Nós */
+.sobre-nos {
+  padding: 50px 20px;
+  text-align: center;
+}
 
-  .autoajuda-item {
-      padding: 15px;
-  }
+.titulo-sobre {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #174f9f;
+}
 
-  .autoajuda-subtitulo {
-      font-size: 1.125rem;
-  }
+.paragrafo-sobre {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+}
 
-  .autoajuda-descricao {
-      font-size: 0.875rem;
-  }
+.btn-sobre {
+  margin-top: 30px;
+}
+
+.btn-sobre a {
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 15px 35px;
+  color: #174f9f;
+  font-weight: 600;
+  border: 3px solid #174f9f;
+}
+
+.btn-sobre a:hover {
+  background-color: #174f9f;
+  color: white;
 }
 
 /* Rodapé */
 .footer {
-  background: rgba(23, 79, 159, 0.7); /* Background com glassmorphism */
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #f0f0f0;
   padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: white;
-}
-
-.footer__box {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .footer__title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.footer__nav {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.footer__nav--block {
-  flex: 1;
+  font-size: 1.5rem;
+  color: #174f9f;
+  margin-bottom: 10px;
 }
 
 .footer__nav--list {
@@ -430,50 +345,134 @@ h1 {
 }
 
 .footer__nav--list li {
-  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
-.footer__nav--list a {
-  color: var(--dark); /* Ajuste para sua paleta de cores */
+.footer__nav--list li a {
   text-decoration: none;
-  font-size: 1rem;
-}
-
-.footer__nav--list a:hover {
-  text-decoration: underline;
+  color: #333;
 }
 
 .footer__nav--info {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.footer__nav--info h3 {
+  font-size: 1rem;
+  color: #174f9f;
+  margin-bottom: 5px;
+}
+
+.footer__nav--info a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer__nav--info a:hover {
+  color: #5180cc;
+}
+
+.footer__nav--info-social {
+  margin-top: 10px;
 }
 
 .icon-social {
-  margin-right: 5px;
+  width: 20px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
-.footer__nav--info-social a {
-  text-decoration: none;
-  color: var(--dark);
-}
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+  }
 
-.footer__nav--info-item {
-  margin-bottom: 15px;
-}
+  .nav-links.active {
+    display: flex;
+  }
 
-.footer__nav--info-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-  color: var(--dark); /* Ajuste para sua paleta de cores */
-}
+  .nav-links li {
+    margin: 10px 0;
+  }
 
-.footer__nav--info-item a {
-  color: var(--dark); /* Ajuste para sua paleta de cores */
-  text-decoration: none;
-}
+  .login {
+    display: none;
+  }
 
-.footer__row {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .btn-chatEmergencial a {
+    padding: 12px 25px;
+  }
+
+  .introducao {
+    padding: 80px 20px;
+  }
+
+  .titulo-intro {
+    font-size: 28px;
+  }
+
+  .paragrafo-intro {
+    font-size: 16px;
+  }
+
+  .btn-agendamento a {
+    padding: 12px 25px;
+  }
+
+  .agendamento-consultas {
+    padding: 40px 20px;
+  }
+
+  .titulo-agendamento {
+    font-size: 28px;
+  }
+
+  .paragrafo-agendamento {
+    font-size: 16px;
+  }
+
+  .autoajuda-item {
+    flex: 1 1 100%;
+  }
+
+  .titulo-autoajuda {
+    font-size: 1.75rem;
+  }
+
+  .sobre-nos {
+    padding: 40px 20px;
+  }
+
+  .titulo-sobre {
+    font-size: 1.75rem;
+  }
+
+  .paragrafo-sobre {
+    font-size: 16px;
+  }
+
+  .btn-sobre a {
+    padding: 12px 30px;
+  }
 }
