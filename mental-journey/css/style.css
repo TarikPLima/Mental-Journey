@@ -21,6 +21,10 @@ h1 {
   background: #5180CC;
 }
 
+.agendamento-consultas ::selection {
+  background: #174F9F;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -179,115 +183,163 @@ h1 {
   color: #fff;
 }
 
-/* Introdução */
-.introducao {
-  text-align: center;
-  padding: 100px 20px;
-}
-
 .titulo-intro {
+  margin-top: 170px;
+  margin-left: 170px;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 20px;
 }
 
 .paragrafo-intro {
-  font-size: 18px;
-  line-height: 1.5;
-  color: rgba(23, 79, 159, 0.7);
-  margin-bottom: 30px;
+  margin-left: 170px;
+  font-size: 28px;
+  line-height: 1.0;
+  color: rgb(23, 79, 159, 0.7);
 }
 
 .img-intro {
-  width: 100%;
-  max-width: 650px;
-  display: block;
-  margin: 0 auto;
+  width: 650px;
+  float: right;
+  margin-right: 190px;
 }
 
 .btn-chatEmergencial {
-  margin-top: 30px;
+  margin-left: 250px;
+  margin-top: 210px;
+  display: inline-block;
 }
 
 .btn-chatEmergencial a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 40px;
   border-radius: 20px;
-  padding: 15px 30px;
-  background-color: #5180cc;
+  padding: 35px 70px;
+  margin-bottom: 600px;
+  background-color: #5180CC;
   color: #fff;
 }
 
 .btn-icon-chat {
-  width: 30px;
+  width: 60px;
   margin-right: 10px;
+  margin-bottom: 10px;
   vertical-align: middle;
 }
 
-/* Agendamento de Consultas */
 .agendamento-consultas {
-  background-color: #5180cc;
-  padding: 50px 20px;
+  background-color: #5180CC;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 290px;
 }
 
 .img-agendamento {
-  width: 100%;
-  max-width: 700px;
-  display: block;
-  margin: 0 auto;
+  width: 700px;
+  margin-left: 180px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  transform: rotate(6deg);
 }
 
 .agendamento-container {
-  text-align: center;
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 250px;
 }
 
 .titulo-agendamento {
-  color: #fff;
+  color: white;
+  margin-bottom: 100px;
+  margin-top: 80px;
   font-weight: bold;
-  margin-bottom: 20px;
-  font-size: 36px;
+  margin-right: 75px;
+  font-size: 50px;
 }
 
 .paragrafo-agendamento {
-  font-size: 18px;
-  color: #fff;
-  line-height: 1.5;
-  margin-bottom: 30px;
+  line-height: 1.1;
+  font-size: 26px;
+  color: white;
+  margin-right: 100px;
+}
+
+.btn-agendamento {
+  margin-top: 180px;
+  margin-right: 180px;
 }
 
 .btn-agendamento a {
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 20px;
-  padding: 15px 30px;
-  background-color: #fff;
-  color: #5180cc;
+  font-size: 30px;
+  border-radius: 35px;
+  padding: 28px 70px;
+  margin-bottom: 600px;
+  background-color: #ffffff;
+  color: #5180CC;
   font-weight: 500;
 }
 
-/* Recursos de Autoajuda */
+.titulo-sobre {
+  font-size: 38px;
+  margin-left: 430px;
+}
+
+.paragrafo-sobre {
+  font-size: 20px;
+  margin: 50px 430px 0px 430px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.btn-sobre {
+  margin-top: 80px;
+  margin-left: 430px;
+  margin-bottom: 120px;
+}
+
+.btn-sobre a {
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 15px 35px;
+  color: #174F9F;
+  font-weight: 600;
+  border: 3px solid #174F9F;
+}
+
+.btn-sobre a:hover {
+  background-color: #174F9F;
+  color: white;
+}
+
 .recursos-autoajuda {
-  padding: 50px 20px;
+  padding: 90px 20px;
+}
+
+.autoajuda-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .titulo-autoajuda {
   font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 50px;
   text-align: center;
-  color: #174f9f;
-  margin-bottom: 30px;
+  color: #174F9F;
 }
 
 .autoajuda-content {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .autoajuda-item {
-  flex: 1 1 300px;
-  padding: 20px;
+  padding: 15px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -298,7 +350,7 @@ h1 {
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #174f9f;
+  color: #174F9F;
 }
 
 .autoajuda-descricao {
@@ -311,42 +363,23 @@ h1 {
   text-decoration: none;
 }
 
-/* Sobre Nós */
-.sobre-nos {
-  padding: 50px 20px;
-  text-align: center;
-}
+/* Responsividade do Recursos de Autoajuda */
+@media (max-width: 768px) {
+  .titulo-autoajuda {
+      font-size: 1.8rem;
+  }
 
-.titulo-sobre {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #174f9f;
-}
+  .autoajuda-item {
+      padding: 15px;
+  }
 
-.paragrafo-sobre {
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 0 auto;
-  max-width: 800px;
-}
+  .autoajuda-subtitulo {
+      font-size: 1.125rem;
+  }
 
-.btn-sobre {
-  margin-top: 30px;
-}
-
-.btn-sobre a {
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 50px;
-  padding: 15px 35px;
-  color: #174f9f;
-  font-weight: 600;
-  border: 3px solid #174f9f;
-}
-
-.btn-sobre a:hover {
-  background-color: #174f9f;
-  color: white;
+  .autoajuda-descricao {
+      font-size: 0.875rem;
+  }
 }
 
 /* Rodapé */
