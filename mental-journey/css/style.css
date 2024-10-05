@@ -25,6 +25,14 @@ h1 {
   background: #174F9F;
 }
 
+.btn-chatEmergencial ::selection {
+  background-color: #174F9F;
+}
+
+.footer ::selection {
+  background-color: #174F9F;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
