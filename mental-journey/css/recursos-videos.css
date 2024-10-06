@@ -179,17 +179,71 @@ h1 {
   color: #fff;
 }
 
-.titulo-sobre-main {
-    margin-top: 140px;
-    font-size: 35px;
-    margin-left: 430px;
+.titulo-autoajudaVideos {
+  margin-top: 140px;
+  font-size: 35px;
+  margin-left: 430px;
 }
 
-.paragrafo-sobre-main {
-    font-size: 20px;
-    margin: 50px 430px 30px 430px;
-    font-weight: 400;
-    line-height: 1.6;
+.intro-videos {
+  font-size: 20px;
+  margin-left: 430px;
+  margin-right: 430px;
+  margin-bottom: 50px;
+}
+
+.cardsVideos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1060px;
+  width: 100%;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.img-container {
+  background-color: rgb(184, 184, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.info {
+  padding: 0 15px 10px 15px;
+  color: #174F9F;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.info p {
+  margin: 5px 0 0;
+  font-size: 14px;
 }
 
 .footer {
@@ -319,41 +373,25 @@ h1 {
   }
 }
 
-/* Responsividade Conteudo */
-@media screen and (max-width: 1024px){
-  .titulo-sobre-main {
-    margin-top: 140px;
-    margin-left: 100px;
-    font-size: 35px;
-  }
-
-  .paragrafo-sobre-main {
-    font-size: 18px;
-    margin: 40px 100px 30px 100px;
-    font-weight: 400;
-    line-height: 1.6;
-}
-}
-
 /* Responsividade Rodapé*/
 @media screen and (max-width: 1024px) {
-  .footer {
-    max-width: 800px;
+    .footer {
+      max-width: 800px;
+    }
+  
+    .footer__header {
+      margin-bottom: 10px;
+    }
+  
+    .footer__title {
+      font-size: 1.7rem;
+    }
+  
+    .footer__nav--list a {
+      font-size: 0.95rem;
+    }
+  
+    .footer__row {
+      font-size: 13px;
+    }
   }
-
-  .footer__header {
-    margin-bottom: 10px;
-  }
-
-  .footer__title {
-    font-size: 1.7rem;
-  }
-
-  .footer__nav--list a {
-    font-size: 0.95rem;
-  }
-
-  .footer__row {
-    font-size: 13px;
-  }
-}

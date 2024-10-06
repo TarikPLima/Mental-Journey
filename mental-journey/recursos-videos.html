@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style-chat.css" rel="stylesheet" type="text/css" />
+    <link href="css/recursos-videos.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <title>Agendamentos de Consultas</title>
+    <title>Recursos de Autoajuda | Vídeos</title>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -20,10 +20,10 @@
             <ul class="nav-links">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="chat-emergencial.html">Chat Emergencial</a></li>
-                <li><a href="agendamento-consultas.html" class="active">Agendamento de Consultas</a></li>
+                <li><a href="agendamento-consultas.html">Agendamento de Consultas</a></li>
                 <!-- Dropdown Menu para 'Recursos de Autoajuda' -->
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" id="toggleDropdown">Recursos de Autoajuda
+                    <a href="#" class="dropdown-toggle active" id="toggleDropdown">Recursos de Autoajuda
                         <span class="arrow">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="seta" viewBox="0 0 16 10">
@@ -33,7 +33,7 @@
                         </span>
                     </a>
                     <ul class="dropdown-content" id="dropdownMenu">
-                        <li><a href="recursos-videos.html">Vídeos</a></li>
+                        <li><a href="recursos-videos.html" class="active">Vídeos</a></li>
                         <li><a href="recursos-artigos.html">Artigos</a></li>
                         <li><a href="recursos-podcasts.html">Podcasts</a></li>
                         <li><a href="recursos-orientacoes.html">Orientações para<br> Crises Emocionais</a></li>
@@ -46,6 +46,50 @@
             </div>
         </nav>
     </header>
+
+    <!-- Conteudo -->
+    <section class="conteudo-autoajudaVideos">
+        <h2 class="titulo-autoajudaVideos">Vídeos de Apoio Emocional e Bem-Estar Mental</h2>
+        <p class="intro-videos">
+            Os vídeos a seguir foram cuidadosamente selecionados para oferecer orientação prática, 
+            conforto e conhecimento em momentos de dificuldade emocional. Cada um aborda temas essenciais como saúde mental, 
+            práticas de relaxamento, meditação e estratégias para lidar com o estresse e a ansiedade.<br><br>
+            Assista no seu próprio ritmo e descubra ferramentas poderosas para cuidar da sua mente e melhorar seu bem-estar diário.
+        </p>
+    </section>
+
+    <section class="cardsVideos">
+        <div class="cards-container">
+            <div class="card">
+                <div class="img-container">
+                    <img src="imagens/card1.jpg" alt="Descrição do vídeo 1">
+                </div>
+                <div class="info">
+                    <h3>Título do Vídeo 1</h3>
+                    <p>Breve descrição sobre o conteúdo do vídeo 1.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="imagens/" alt="Descrição do vídeo 2">
+                </div>
+                <div class="info">
+                    <h3>Título do Vídeo 2</h3>
+                    <p>Breve descrição sobre o conteúdo do vídeo 2.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="imagens/" alt="Descrição do vídeo 3">
+                </div>
+                <div class="info">
+                    <h3>Título do Vídeo 3</h3>
+                    <p>Breve descrição sobre o conteúdo do vídeo 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Rodapé -->
     <footer class="footer section-container">
