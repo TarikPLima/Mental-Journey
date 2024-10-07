@@ -214,6 +214,7 @@ h1 {
   flex-direction: column;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
+  margin-bottom: 10px;
 }
 
 .img-container {
@@ -247,7 +248,7 @@ h1 {
 }
 
 .footer {
-    background: rgba(23, 79, 159, 0.7); /* Background com glassmorphism */
+    background: rgba(23, 79, 159, 0.7);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
