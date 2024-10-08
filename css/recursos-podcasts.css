@@ -199,7 +199,7 @@ h1 {
   margin-bottom: 40px;
 }
 
-.cards-container {
+.cards-containerPodcast {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -207,7 +207,7 @@ h1 {
   width: 100%;
 }
 
-.card {
+.cardPodcast {
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -217,7 +217,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-.img-container {
+.img-containerPodcast {
   background-color: rgb(184, 184, 184);
   display: flex;
   justify-content: center;
@@ -226,23 +226,23 @@ h1 {
   border-radius: 20px;
 }
 
-.img-container img {
+.img-containerPodcast img {
   width: 100%;
   height: auto;
   border-radius: 15px;
 }
 
-.info {
+.infoPodcast {
   padding: 0 15px 10px 15px;
   color: #174F9F;
 }
 
-.info h3 {
+.infoPodcast h3 {
   margin: 0;
   font-size: 18px;
 }
 
-.info p {
+.infoPodcast p {
   margin: 5px 0 0;
   font-size: 14px;
 }

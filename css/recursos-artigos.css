@@ -179,6 +179,74 @@ h1 {
   color: #fff;
 }
 
+.titulo-autoajudaArtigos {
+  margin-top: 140px;
+  font-size: 35px;
+  margin-left: 430px;
+}
+
+.intro-Artigos {
+  font-size: 20px;
+  margin-left: 430px;
+  margin-right: 430px;
+  margin-bottom: 50px;
+}
+
+.cardsArtigos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.cards-containerArtigos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1060px;
+  width: 100%;
+}
+
+.cardArtigos {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.img-containerArtigos {
+  background-color: rgb(184, 184, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.img-containerArtigos img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.infoArtigos {
+  padding: 0 15px 10px 15px;
+  color: #174F9F;
+}
+
+.infoArtigos h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.infoArtigos p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
 .footer {
     background: rgba(23, 79, 159, 0.7); /* Background com glassmorphism */
     border-top-left-radius: 20px;
