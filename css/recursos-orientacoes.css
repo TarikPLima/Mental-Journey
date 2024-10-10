@@ -217,6 +217,10 @@ h1 {
   margin-bottom: 10px;
 }
 
+.cardOrientacao:hover {
+  background-color: #ededed;
+}
+
 .img-containerOrientacao {
   background-color: rgb(184, 184, 184);
   display: flex;

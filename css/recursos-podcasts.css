@@ -199,6 +199,10 @@ h1 {
   margin-bottom: 40px;
 }
 
+.cardPodcast:hover {
+  background-color: #ededed;
+}
+
 .cards-containerPodcast {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -245,6 +249,22 @@ h1 {
 .infoPodcast p {
   margin: 5px 0 0;
   font-size: 14px;
+}
+
+.btn-YoutubePodcast {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  background-color: #174F9F;
+  padding: 10px 20px;
+  color: white;
+}
+
+.btn-SpotifyPodcast {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  background-color: #174F9F;
+  padding: 10px 20px;
+  color: white;
 }
 
 .footer {
