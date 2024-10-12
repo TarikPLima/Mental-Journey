@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/recursos-orientacoes.css" rel="stylesheet" type="text/css" />
+    <link href="css/style-formChat.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <title>Recursos de Autoajuda | Orientações para Crises Emocionais</title>
+    <title>Formulário Chat Emergencial</title>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -19,11 +19,11 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="formChat-emergencial.html">Chat Emergencial</a></li>
+                <li><a href="formChat-emergencial.html" class="active">Chat Emergencial</a></li>
                 <li><a href="agendamento-consultas.html">Agendamento de Consultas</a></li>
                 <!-- Dropdown Menu para 'Recursos de Autoajuda' -->
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle active" id="toggleDropdown">Recursos de Autoajuda
+                    <a href="#" class="dropdown-toggle" id="toggleDropdown">Recursos de Autoajuda
                         <span class="arrow">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="seta" viewBox="0 0 16 10">
@@ -35,7 +35,7 @@
                     <ul class="dropdown-content" id="dropdownMenu">
                         <li><a href="recursos-podcasts.html">Podcasts</a></li>
                         <li><a href="recursos-artigos.html">Artigos</a></li>
-                        <li><a href="recursos-orientacoes.html" class="active">Orientações para<br> Crises Emocionais</a></li>
+                        <li><a href="recursos-orientacoes.html">Orientações para<br> Crises Emocionais</a></li>
                     </ul>
                 </li>
                 <li><a href="sobre-nos.html">Sobre Nós</a></li>
@@ -46,70 +46,59 @@
         </nav>
     </header>
 
-    <!-- Conteudo -->
-    <section class="conteudo-autoajudaOrientacao">
-        <h2 class="titulo-autoajudaOrientacao">Orientações para Crises Emocionais</h2>
-        <p class="intro-Orientacao">
-
+    <section class="inicio-chat">
+        <h2 class="titulo-chat">Formulário do Chat Emergencial</h2>
+        <p class="subtitulo-chat">
+            Prencha os campos para conversar com um dos nossos voluntários
         </p>
     </section>
 
-    <section class="cardsOrientacao">
-        <div class="cards-containerOrientacao">
-            <div class="cardOrientacao">
-                <div class="img-containerOrientacao">
-                    <img src="imagens/card1.jpg" alt="">
-                </div>
-                <div class="infoOrientacao">
-                    <h3>Título do Podcast 1</h3>
-                    <p>Breve descrição sobre o conteúdo do artigos 1.</p>
-                </div>
+    <section class="formulario-chat">
+        <form class="form-chat">
+            <label for="" class="perguntas-form">Você prefere ser chamado por algum apelido ou permanecer anônimo?</label><br>
+            <input type="text" class="input-resposta1"><br><br>
+
+            <label for="" class="perguntas-form">Como você está se sentindo agora?</label><br>
+            <input type="text" class="input-resposta2"><br><br>
+
+            <label for="" class="perguntas-form">Há quanto tempo você está se sentindo assim?</label><br><br>
+            <div class="radio-grupo">
+                <input type="radio" class="radio-1" id="algumas-horas" name="tempo" value="algumas horas">
+                <label for="algumas-horas">Algumas horas</label>
+                <input type="radio" class="radio-1" id="alguns-dias" name="tempo" value="alguns dias">   
+                <label for="alguns-dias">Alguns dias</label>
+                <input type="radio" class="radio-1" id="algumas-semanas" name="tempo" value="algumas semanas">
+                <label for="algumas-semanas">Algumas semanas</label>
+                <input type="radio"c lass="radio-1" id="alguns-meses" name="tempo" value="alguns meses">
+                <label for="algumas-meses">Alguns meses</label>
+                <input type="radio" class="radio-1" id="mais-de-seis-meses" name="tempo" value="mais de 6 meses">
+                <label for="mais-de-6-meses">Mais de 6 meses</label><br><br>
             </div>
-            <div class="cardOrientacao">
-                <div class="img-containerOrientacao">
-                    <img src="imagens/" alt="">
-                </div>
-                <div class="infoOrientacao">
-                    <h3>Título do Podcast 2</h3>
-                    <p>Breve descrição sobre o conteúdo do podcast 2.</p>
-                </div>
+
+            <label for="" class="perguntas-form">O que está causando esses sentimentos?</label><br>
+            <input type="text" class="input-resposta4"><br><br>
+
+            <label for="" class="perguntas-form">Você já buscou algum tipo de ajuda?</label><br><br>
+            <div class="radio-grupo">
+                <input type="radio" class="radio-2" id="sim" name="ajuda" value="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" class="radio-2" id="nao" name="ajuda" value="nao">
+                <label for="nao">Não</lebel><br><br>
             </div>
-            <div class="cardOrientacao">
-                <div class="img-containerOrientacao">
-                    <img src="imagens/" alt="">
-                </div>
-                <div class="infoOrientacao">
-                    <h3>Título do Podcast 3</h3>
-                    <p>Breve descrição sobre o conteúdo do podcast 3.</p>
-                </div>
+
+            <label for="" class="perguntas-form">Você tem pensamentos de fazer mal a si mesmo?</label><br><br>
+            <div class="radio-grupo">
+                <input type="radio" class="radio-3" id="sim" name="ajuda" value="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" class="radio-3" id="nao" name="ajuda" value="nao">
+                <label for="nao">Não</lebel><br><br>
             </div>
-            <div class="cardOrientacao">
-                <div class="img-containerOrientacao">
-                    <img src="imagens/" alt="">
-                </div>
-                <div class="infoOrientacao">
-                    <h3>Título do Podcast 4</h3>
-                    <p>Breve descrição sobre o conteúdo do podcast 4.</p>
-                </div>
-            </div>
-            <div class="cardOrientacao">
-                <div class="img-containerOrientacao">
-                    <img src="imagens/" alt="">
-                </div>
-                <div class="infoOrientacao">
-                    <h3>Título do Podcast 5</h3>
-                    <p>Breve descrição sobre o conteúdo do podcast 5.</p>
-                </div>
-            </div>
-            <div class="cardOrientacao">
-                <div class="img-containerOrientacao">
-                    <img src="imagens/" alt="Descrição do vídeo 6">
-                </div>
-                <div class="infoOrientacao">
-                    <h3>Título do Podcast 6</h3>
-                    <p>Breve descrição sobre o conteúdo do podcast 6.</p>
-                </div>
-            </div>
+
+            <label for="" class="perguntas-form">Você gostaria de compartilhar mais alguma informação que possa ajudar no seu atendimento?</label><br>
+            <input type="text" class="input-resposta7"><br><br><br>
+
+            <input type="submit" value="Solicitar o atendimento" class="btn-solicitar" formaction="chat-emergencial.html">
+        </form>
     </section>
 
     <!-- Rodapé -->

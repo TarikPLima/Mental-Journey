@@ -179,132 +179,112 @@ h1 {
   color: #fff;
 }
 
-.titulo-autoajudaPodcast {
-  margin-top: 140px;
-  font-size: 35px;
-  margin-left: 430px;
+.inicio-chat {
+    margin-top: 130px;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
-.intro-podcast {
-  font-size: 20px;
-  margin-left: 430px;
-  margin-right: 430px;
-  margin-bottom: 50px;
+.titulo-chat {
+    font-size: 40px;
 }
 
-.cardsPodcast {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
+.subtitulo-chat {
+    font-size: 19px;
 }
 
-.cardPodcast:hover {
-  background-color: #ededed;
+.form-chat {
+    text-align: center;
 }
 
-.cards-containerPodcast {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1060px;
-  width: 100%;
+.form-chat label {
+    font-size: 22px;
 }
 
-.cardPodcast {
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.form-chat input {
+    width: 730px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.perguntas-form {
+  font-weight: 500;
+}
+
+.input-resposta1 {
+  border: 1px solid #c4c4c4;
+  padding-bottom: 50px;
+  padding: 10px;
+}
+
+.input-resposta1:focus {
+  outline: none;
+  border: 1px solid #424242;
+}
+
+.input-resposta2 {
+  border: 1px solid #c4c4c4;
+  padding-bottom: 70px;
+  padding: 10px 10px 50px 10px;
+}
+
+.input-resposta2:focus {
+  outline: none;
+  border: 1px solid #424242;
+}
+
+.input-resposta4 {
+  border: 1px solid #c4c4c4;
+  padding-bottom: 70px;
+  padding: 10px 10px 50px 10px;
+}
+
+.input-resposta4:focus {
+  outline: none;
+  border: 1px solid #424242;
+}
+
+.input-resposta7 {
+  border: 1px solid #c4c4c4;  
+  padding-bottom: 70px;
+  padding: 10px 10px 50px 10px;
+}
+
+.input-resposta7:focus {
+  outline: none;
+  border: 1px solid #424242;
+}
+
+.radio-grupo {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-  margin-bottom: 10px;
-}
-
-.img-containerPodcast {
-  background-color: rgb(184, 184, 184);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  border-radius: 20px;
-}
-
-.img-containerPodcast img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-}
-
-.infoPodcast {
-  padding: 0 15px 10px 15px;
-  color: #174F9F;
-}
-
-.infoPodcast h3 {
-  margin: 0;
-  font-size: 22px;
-}
-
-.infoPodcast p {
-  margin: 10px 0 0;
-  font-size: 14px;
-  font-weight: 550;
-}
-
-.btn-podcast {
-  display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-card1 {
-  margin-top: 20px;
+.radio-grupo label {
+  display: inline-flex;
+  align-items: center;
 }
 
-.btn-card2 {
-  margin-top: 40px;
-}
-
-.btn-card4 {
-  margin-top: 97px;
-}
-
-.btn-card5 {
-  margin-top: 39px;
-}
-
-.btn-YoutubePodcast {
-  margin-left: 95px;
-  margin-bottom: 10px;
+.radio-1 {
   margin-right: 10px;
-  background-color: #5180CC;
-  padding: 14px 16px;
-  border-radius: 20px;
 }
 
-.btn-SpotifyPodcast {
-  margin-left: 15px;
-  margin-bottom: 18px;
-  background-color: #5180CC;
-  padding: 10px 15px;
-  border-radius: 20px;
-  margin-top: 8px;
-}
-
-.btn-YoutubePodcast a {
+.btn-solicitar {
   text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 15px 30px;
+  background-color: #5180cc;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  margin-bottom: 60px;
 }
 
-.btn-SpotifyPodcast a {
-  text-decoration: none;
-}
-
-.icon-podcast {
-  width: 25px;
-  margin-top: 5px;
-}
-
+/* Rodapé */
 .footer {
     background: rgba(23, 79, 159, 0.7); /* Background com glassmorphism */
     border-top-left-radius: 20px;
@@ -434,23 +414,23 @@ h1 {
 
 /* Responsividade Rodapé*/
 @media screen and (max-width: 1024px) {
-    .footer {
-      max-width: 800px;
-    }
-  
-    .footer__header {
-      margin-bottom: 10px;
-    }
-  
-    .footer__title {
-      font-size: 1.7rem;
-    }
-  
-    .footer__nav--list a {
-      font-size: 0.95rem;
-    }
-  
-    .footer__row {
-      font-size: 13px;
-    }
+  .footer {
+    max-width: 800px;
   }
+
+  .footer__header {
+    margin-bottom: 10px;
+  }
+
+  .footer__title {
+    font-size: 1.7rem;
+  }
+
+  .footer__nav--list a {
+    font-size: 0.95rem;
+  }
+
+  .footer__row {
+    font-size: 13px;
+  }
+}
