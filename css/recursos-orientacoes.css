@@ -201,7 +201,7 @@ h1 {
 
 .cards-containerOrientacao {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   max-width: 1060px;
   width: 100%;
@@ -215,10 +215,6 @@ h1 {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
   margin-bottom: 10px;
-}
-
-.cardOrientacao:hover {
-  background-color: #ededed;
 }
 
 .img-containerOrientacao {
@@ -243,12 +239,20 @@ h1 {
 
 .infoOrientacao h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .infoOrientacao p {
   margin: 5px 0 0;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 550;
+  color: #5180CC;
+}
+
+.infoOrientacao li {
+  font-weight: 550;
+  font-size: 16px;
+  color: #5180CC;
 }
 
 .footer {

@@ -239,16 +239,19 @@ h1 {
 .infoArtigos {
   padding: 0 15px 10px 15px;
   color: #174F9F;
+  
 }
 
 .infoArtigos h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .infoArtigos p {
   margin: 5px 0 0;
   font-size: 14px;
+  font-weight: 550;
+  color: #5180CC;
 }
 
 .footer {
