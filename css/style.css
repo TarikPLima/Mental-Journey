@@ -34,7 +34,7 @@ h1 {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -43,11 +43,11 @@ h1 {
 
 ::-webkit-scrollbar-thumb {
   background: #5180CC;
-  border-radius: 20px;
+  border-radius: 2.5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #15417e;
+  background: #386199;
 }
 
 .partner {
@@ -220,11 +220,11 @@ h1 {
   margin-bottom: 600px;
   background-color: #5180CC;
   color: #fff;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-chatEmergencial a:hover {
   background-color: #4872b6;
-  transition: 0.3s ease-in-out;
 }
 
 .btn-icon-chat {
@@ -288,11 +288,11 @@ h1 {
   background-color: #ffffff;
   color: #5180CC;
   font-weight: 500;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-agendamento a:hover {
   background-color: #f5f5f5;
-  transition: 0.3s ease-in-out;
 }
 
 .titulo-sobre {
@@ -453,13 +453,14 @@ h1 {
   text-decoration: none;
   font-size: 1rem;
   padding: 0 5px 0 5px;
+  transition: 0.3s ease-in-out;
+  border-radius: 9px;
 }
 
 .footer__nav--list a:hover {
   background-color: #fff;
   color: #5180CC;
   font-weight: 500;
-  border-radius: 15px;
 }
 
 .footer__nav--info {
