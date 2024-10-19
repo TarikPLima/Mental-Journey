@@ -113,8 +113,8 @@ h1 {
   font-size: 16px;
   color: #333;
   padding: 10px 15px;
-  transition: background-color 0.3s;
-  border-radius: 20px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 17px;
 }
 
 .nav-links a.active,
@@ -161,7 +161,7 @@ h1 {
 }
 
 .login {
-  margin-right: 80px;
+  margin-right: 117px;
   font-weight: 500;
 }
 
@@ -172,11 +172,6 @@ h1 {
   margin-right: 10px;
   border-radius: 20px;
   padding: 8px 15px;
-}
-
-.login a:hover {
-  background-color: #5180CC;
-  color: #fff;
 }
 
 .titulo-autoajudaPodcast {

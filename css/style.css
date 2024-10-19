@@ -125,8 +125,8 @@ h1 {
   font-size: 16px;
   color: #333;
   padding: 10px 15px;
-  transition: background-color 0.3s;
-  border-radius: 20px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 17px;
 }
 
 .nav-links a.active,
@@ -173,7 +173,7 @@ h1 {
 }
 
 .login {
-  margin-right: 80px;
+  margin-right: 117px;
   font-weight: 500;
 }
 
@@ -184,11 +184,6 @@ h1 {
   margin-right: 10px;
   border-radius: 20px;
   padding: 8px 15px;
-}
-
-.login a:hover {
-  background-color: #5180CC;
-  color: #fff;
 }
 
 .titulo-intro {
@@ -220,11 +215,16 @@ h1 {
 .btn-chatEmergencial a {
   text-decoration: none;
   font-size: 40px;
-  border-radius: 20px;
+  border-radius: 35px;
   padding: 35px 70px;
   margin-bottom: 600px;
   background-color: #5180CC;
   color: #fff;
+}
+
+.btn-chatEmergencial a:hover {
+  background-color: #4872b6;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-icon-chat {
@@ -290,6 +290,11 @@ h1 {
   font-weight: 500;
 }
 
+.btn-agendamento a:hover {
+  background-color: #f5f5f5;
+  transition: 0.3s ease-in-out;
+}
+
 .titulo-sobre {
   font-size: 38px;
   margin-left: 430px;
@@ -316,6 +321,7 @@ h1 {
   color: #174F9F;
   font-weight: 600;
   border: 3px solid #174F9F;
+  transition: background-color 0.3s;
 }
 
 .btn-sobre a:hover {
@@ -419,6 +425,7 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
   margin-top: 10px;
+  margin-left: 5px;
 }
 
 .footer__nav {
@@ -445,10 +452,14 @@ h1 {
   color: var(--dark); /* Ajuste para sua paleta de cores */
   text-decoration: none;
   font-size: 1rem;
+  padding: 0 5px 0 5px;
 }
 
 .footer__nav--list a:hover {
-  text-decoration: underline;
+  background-color: #fff;
+  color: #5180CC;
+  font-weight: 500;
+  border-radius: 15px;
 }
 
 .footer__nav--info {
