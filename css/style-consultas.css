@@ -186,6 +186,7 @@ h1 {
   margin-left: 430px;
   margin-right: 430px;
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
 .cardsPsicologo {
@@ -231,12 +232,7 @@ h1 {
   border-radius: 15px;
 }
 
-.etiquetaPsicologo {
-  margin: 0 3px 110px 80px;
-  background-color: #174F9F;
-  color: #fff;
-  border-radius: 20px;
-}
+
 
 .info {
   padding: 0 15px 10px 15px;
@@ -296,11 +292,8 @@ h1 {
 /* Rodapé */
 .footer {
     background: rgba(23, 79, 159, 0.7); /* Background com glassmorphism */
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 20px;
-    max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: white;
@@ -315,7 +308,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 250px;
   }
   
   .footer__title {
@@ -338,6 +332,7 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-left: 250px;
   }
   
   .footer__nav--list li {
@@ -380,6 +375,7 @@ h1 {
   .footer__nav--info-item h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
+    margin-top: 0;
     color: var(--dark); /* Ajuste para sua paleta de cores */
   }
   
