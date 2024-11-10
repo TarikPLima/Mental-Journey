@@ -251,6 +251,7 @@ h1 {
   color: #5180CC;
 }
 
+/* Rodapé */
 .footer {
   background: rgba(23, 79, 159, 0.7); /* Background com glassmorphism */
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -270,7 +271,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  margin-left: 250px;
+  margin-left: 400px;
 }
 
 .footer__title {
@@ -293,7 +294,7 @@ h1 {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 250px;
+  margin-left: 400px;
 }
 
 .footer__nav--list li {
@@ -318,10 +319,15 @@ h1 {
 .footer__nav--info {
   display: flex;
   flex-direction: column;
+  margin-left: 200px;
 }
 
 .icon-social {
   margin-right: 5px;
+}
+
+.facebook {
+  margin-left: 200px;
 }
 
 .footer__nav--info-social a {
@@ -350,7 +356,6 @@ h1 {
   justify-content: center;
   margin-top: 20px;
 }
-
 /* Resposividade Cabeçalho */
 @media screen and (max-width: 1024px) {
   .nav-links {

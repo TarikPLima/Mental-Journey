@@ -309,7 +309,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    margin-left: 250px;
+    margin-left: 400px;
   }
   
   .footer__title {
@@ -332,7 +332,7 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-left: 250px;
+    margin-left: 400px;
   }
   
   .footer__nav--list li {
@@ -357,10 +357,15 @@ h1 {
   .footer__nav--info {
     display: flex;
     flex-direction: column;
+    margin-left: 200px;
   }
   
   .icon-social {
     margin-right: 5px;
+  }
+
+  .facebook {
+    margin-left: 200px;
   }
   
   .footer__nav--info-social a {
